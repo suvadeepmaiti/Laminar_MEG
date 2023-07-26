@@ -1,0 +1,13 @@
+output_dir='/home/smaiti/Danc_lab/data/inversion_files';
+participants_tsv='/home/smaiti/Danc_lab/data/participants.tsv';
+mat_file='/home/smaiti/Danc_lab/data/multilayer_spm-converted_no_filter_autoreject-sub-001-ses-01-001-motor-epo/sim_at_vertex_5_layer_5_multilayer_spm-converted_no_filter_autoreject-sub-001-ses-01-001-motor-epo.mat';
+t1_file='/home/smaiti/Danc_lab/data/t1w.nii';
+link_vector='/home/smaiti/Danc_lab/data/multilayer_11.ds.link_vector.nodeep.gii';
+mu_file='/home/smaiti/Danc_lab/data/inversion_files/sim_at_vertex_5_layer_5_multilayer_spm-converted_no_filter_autoreject-sub-001-ses-01-001-motor-epo_MU.tsv';
+it_file='/home/smaiti/Danc_lab/data/inversion_files/sim_at_vertex_5_layer_5_multilayer_spm-converted_no_filter_autoreject-sub-001-ses-01-001-motor-epo_It.tsv';
+json_out_file='/home/smaiti/Danc_lab/data/inversion_files/sim_at_vertex_5_layer_5_multilayer_spm-converted_no_filter_autoreject-sub-001-ses-01-001-motor-epo.json';
+layers=11;
+sub='sub-001';
+invert_multisurface(output_dir,...
+    participants_tsv, mat_file, t1_file, link_vector, mu_file, it_file,...
+    json_out_file, layers, sub)
